@@ -2,10 +2,13 @@
   "name": "react-http-delete",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "10.0.0"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "webpack",
+    "postinstall": "webpack",
     "dev": "webpack-dev-server",
     "watch": "npm-run-all --parallel start dev"
   },
